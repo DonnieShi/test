@@ -33,6 +33,18 @@ App({
       }
     })
   },
+  onShow:function()
+  {
+    console.log('do something wen show');
+  },
+  onHide:function()
+  {
+    console.log('do something when hide ');
+  },
+  onError:function()
+  {
+    console.log('do something when error');
+  },
   globalData: {
     userInfo: null
   }

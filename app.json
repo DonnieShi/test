@@ -1,8 +1,7 @@
 {
   "pages":[
     "pages/home/home",
-    "pages/settings/settings",
-    "pages/logs/logs"
+    "pages/settings/settings"
   ],
   "window":{
     "backgroundTextStyle":"light",

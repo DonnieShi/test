@@ -1,27 +1,38 @@
-.menu{
-	position: fixed;
-	top: 0px;
-	width: 100%;
-	background: #fff;
-	border-bottom: #eee solid 1px;
-	z-index: 100000;
-	margin-bottom: 39px;
+
+
+.section{
+  font-family: 微软雅黑,宋体;
+  font-size: 18px;
+  text-align: center;
 }
 
-.top-nav{
-	white-space: nowrap;
-	width: 95%;
-	margin: 0 auto;
-}
 
-.top-btn{
-	display: inline-block;
-	padding: 22rpx;
-	font-size: 16px;
-}
 
-.top-hoverd-btn{
-	color: #42bd56;
-	font-size: 17px;
-	border-bottom: #42bd56 solid 1px;
+
+.content {
+  font-family: 微软雅黑,宋体;
+  font-size: 25px;
+  background-size: cover;
+  height: 100%;
+  width: 100%;
+  text-align: center;
+  color: #333333;
+}
+.today{
+  padding-top: 10px;
+  height: 50%;
+}
+.temp{
+  font-size: 50px;
+  text-align: center;
+}
+.lowhigh{
+  font-size: 20px;
+  text-align: center;
+}
+.weather{
+  font-size: 20px;
+}
+.aqi{
+  font-size: 20px;
 }

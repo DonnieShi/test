@@ -1,7 +1,19 @@
-<view class="menu" style="display: {{!previewing ? 'block' : 'none'}};">
-    <scroll-view scroll-x="true" class="top-nav">
-        <block wx:for="{{navItems}}" wx:for-item="item" wx:for-index="itemIdx">
-            <view bindtap="navItemTap" class="top-btn {{navBtnSelectIdx == itemIdx ? 'top-hoverd-btn' : ''}}" data-index="{{itemIdx}}" data-cid="{{item.cid}}">{{item.title}}</view>
-        </block>
-    </scroll-view>
+<view class="content" bindtap="viewTap">
+
+  <view class="section">
+      <view class="section__title">你要查询的是：{{inputValue}}</view>
+      <input  bindinput="bindKeyInput" placeholder="请输入要查询的城市名称" value="{{inputValue}}"/>
+      <button type="primary" disabled="{{disabled}}"  bindtap="search"> 查询 </button>
+  </view>
+
+  <view class="today" hidden="{{modalHidden}}">
+    <view class= "info">
+      <view class="temp">{{temp}}℃</view>
+      <view class="aqi">空气质量指数:{{aqi}}</view>
+      <view class="lowhigh">{{low}}/{{high}}</view>
+      <view class="type">{{type}}</view>
+      <view class="week">{{week}}</view>
+      <view class="weather">{{weather}}</view>
+    </view>
+  </view>
 </view>
